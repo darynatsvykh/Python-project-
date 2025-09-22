@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/static/api/spa/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><strong>Sign Up</strong></title>
+ 
+  <link rel="stylesheet" crossorigin href="/static/api/spa/assets/index-DUEfxN0n.css">
+</head>
+
+<body>
+    <div name="app">
+    
+        <form>
+            <h2>Create an Account</h2>
+            <form method="POST" class="form-group">
+              {% csrf_token %}
+              {{form}}
+              <button type="submit" class="btn btn-success" a href="registration/login.html" >Register</button>
+        </form>
+    </div>
+</body>
+</html> 

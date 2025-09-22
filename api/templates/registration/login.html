@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/static/api/spa/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  <link rel="stylesheet" crossorigin href="/static/api/spa/assets/index-DUEfxN0n.css">
+  {% load static %}
+</head>
+
+<body>
+    <div class="app">
+      <h2>Login</h2>
+      <form method="POST">
+        {% csrf_token %}
+        {{form}}
+          <button type="submit" class="btn btn-success">Login</button>
+          <p>Don't have an account? Sing up <a class="signup_link" a href="registration/signup.html"> here</p>
+        </form>
+    </div>
+</body>
+</html> 
+
